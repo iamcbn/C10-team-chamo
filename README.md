@@ -1,4 +1,4 @@
-﻿# Latent Probing for Mental Health Sentiment Classification
+# Latent Probing for Mental Health Sentiment Classification
 
 ## Dataset
 We utilized two primary datasets from Kaggle to create a robust and diverse training corpus:
@@ -22,13 +22,25 @@ The models demonstrated robust performance in accurately flagging distress signa
 
 ## Reproduction
 To reproduce our results from scratch, please follow these steps:
-1. **Environment Setup:** Ensure you have Python 3 installed. Install the required dependencies using pip install pandas torch transformers scikit-learn tqdm.
-2. **Hugging Face Authentication:** Our pipeline uses the gated google/gemma-2-2b model. You must create a Hugging Face account, accept the Gemma 2 terms, and set your access token as an environment variable: export HF_TOKEN="your_token_here".
-3. **Kaggle API:** Ensure your Kaggle API credentials are set up (~/.kaggle/kaggle.json) to download the datasets.
-4. **Execution:** 
-   - Run the provided scripts/triai-init.ipynb notebook.
-   - We recommend running this notebook in a GPU-enabled environment (e.g., Kaggle or Google Colab) to expedite the embedding extraction process. 
-   - Note: If running locally, ensure you update the Kaggle-specific paths (/kaggle/input/...) in the notebook to point to your local data directories.
+1. **Environment Setup:** Ensure you have Python 3 installed. Install all required dependencies by running:
+   ```
+   pip install -r requirements.txt
+   ```
+2. **Hugging Face Authentication:** Our pipeline uses the gated google/gemma-2-2b model. You must create a Hugging Face account, accept the Gemma 2 terms, and set your access token as an environment variable:
+   ```
+   export HF_TOKEN="your_token_here"
+   ```
+   *(On Windows, use `set HF_TOKEN=your_token_here` in Command Prompt or `$env:HF_TOKEN="your_token_here"` in PowerShell.)*
+3. **Kaggle API:** Ensure your Kaggle API credentials are set up (`~/.kaggle/kaggle.json`). Then download the datasets by running:
+   ```
+   python scripts/download_data.py
+   ```
+   This will automatically download and extract the required datasets into the `data/` directory.
+4. **Training:** Open and run all cells in the notebook sequentially:
+   ```
+   scripts/triai-init.ipynb
+   ```
+   We recommend a GPU-enabled environment (e.g., Kaggle or Google Colab) to expedite the embedding extraction process.
 
 ## Appendix
 ### Team Members & Contributors
