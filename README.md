@@ -43,10 +43,12 @@ To reproduce our results from scratch, please follow these steps:
    We recommend a GPU-enabled environment (e.g., Kaggle or Google Colab) to expedite the embedding extraction process.
 
 ## Appendix
-### Team Members & Contributors
+### Team Members
 - Bruno Nwagbo
 - Daniel Ohachor
+- Bassey Emmanuel Francis
+- ⁠Ademola James Aderemi
 
 ### Mentors
-- 
-- 
+- Sina Mohammadi
+- Odion Okonofua 
