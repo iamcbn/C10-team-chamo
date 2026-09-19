@@ -49,6 +49,5 @@ To reproduce our results from scratch, please follow these steps:
 - Bassey Emmanuel Francis
 - ⁠Ademola James Aderemi
 
-### Mentors
-- Sina Mohammadi
+### Mentor
 - Odion Okonofua 
