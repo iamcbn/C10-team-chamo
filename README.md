@@ -50,4 +50,4 @@ To reproduce our results from scratch, please follow these steps:
 - ⁠Ademola James Aderemi
 
 ### Mentor
-- Odion Okonofua 
+- Odion Joel Okonofua 
